@@ -1,2 +1,6 @@
 title: RoiSoftStudio Legal
 theme: minima
+# Repo notes, not pages: keep them off the published site
+exclude:
+  - CLAUDE.md
+  - docs/
