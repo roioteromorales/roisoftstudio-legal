@@ -1,0 +1,14 @@
+# >>> roi-workspace baseline (scripts/gitignore-baseline.sh) - edit the script, not this block
+# Env files: real values live in Vaultwarden / Coolify; only the template is committed
+.env
+.env.*
+*.env
+!.env.example
+# Secrets: plaintext stays local; only the SOPS/age backups (.enc, .age) are tracked.
+# The folders are re-included (git cannot re-include a file inside an ignored folder), their files are not.
+!**/.secrets/
+**/.secrets/**
+!**/.secrets/**/
+!**/.secrets/**/*.enc
+!**/.secrets/**/*.age
+# <<< roi-workspace baseline
