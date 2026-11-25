@@ -32,3 +32,10 @@ Two things that are easy to forget:
 - A policy states what the game really does with data. When a game adds analytics, ads or a leaderboard
   (Play Games Services), update its policy and its "Last updated" date in the same change.
 - Workspace conventions: [git workflow](../../docs/git-workflow.md), roadmap in [docs/roadmap.md](docs/roadmap.md).
+
+## Roadmap
+
+[docs/roadmap.md](docs/roadmap.md), in the workspace [roadmap standard](../../docs/roadmap-standard.md): Now / Next / Later / Done,
+one line per item with `[key:: value]` fields. When something ships, tick it, put it at the top of Done with
+`[done:: …]` and `[version:: …]`, then run `../../scripts/roadmap.py archive docs/roadmap.md` and `../../scripts/roadmap.py lint docs/roadmap.md --repo .`.
+`docs/` is excluded from the published site (`_config.yml`).
